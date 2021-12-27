@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>At Lending Animation</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --clipDownTime: 0.75s;
+      }
+
+      .parentDiv {
+        display: grid;
+        place-items: center;
+        min-height: 100vh;
+      }
+
+      #a3,
+      #t2,
+      #l2,
+      #e1,
+      #e3,
+      #n1,
+      #n3,
+      #i2,
+      #n22,
+      #g2 {
+        transform-box: fill-box;
+        transform-origin: center;
+        clip-path: polygon(0 0, 100% 0, 100% 0%, 0 0%);
+        animation: clipDown var(--clipDownTime) ease-out forwards;
+      }
+
+      @keyframes clipDown {
+        100% {
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+      }
+
+      #t2 {
+        animation-delay: calc(var(--clipDownTime) + 0.25s);
+      }
+
+      #l2 {
+        animation-delay: calc(var(--clipDownTime) + 0.5s);
+      }
+
+      #e1 {
+        animation-delay: calc(var(--clipDownTime) + 0.75s);
+      }
+
+      #e3 {
+        animation-delay: calc(var(--clipDownTime) + 1s);
+      }
+
+      #n1 {
+        animation-delay: calc(var(--clipDownTime) + 1.25s);
+      }
+
+      #n3 {
+        animation-delay: calc(var(--clipDownTime) + 1.5s);
+      }
+
+      #i2 {
+        animation-delay: calc(var(--clipDownTime) + 1.75s);
+      }
+
+      #n22 {
+        animation-delay: calc(var(--clipDownTime) + 2s);
+      }
+
+      #g2 {
+        animation-delay: checkIn;
+      }
+
+      #homestroke {
+        stroke-dasharray: 1936.0020751953125px;
+        stroke-dashoffset: 1936.0020751953125px;
+        animation: checkIn 3s ease-in-out calc(var(--clipDownTime) + 2.5s)
+          forwards;
+      }
+
+      @keyframes checkIn {
+        100% {
+          stroke-dashoffset: 0px;
+        }
+      }
+
+      #window,
+      #chim,
+      #chim_2 {
+        transform-box: fill-box;
+        transform-origin: center;
+        opacity: 0;
+        animation: fadeIn 1s ease-in-out calc(var(--clipDownTime) + 4s) forwards;
+      }
+
+      #chim,
+      #chim_2 {
+        animation-delay: calc(var(--clipDownTime) + 3.75s);
+      }
+
+      @keyframes fadeIn {
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parentDiv">
+      <svg
+        width="400"
+        min-height="0"
+        viewBox="0 0 812 358"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g id="atlending sharped">
+          <path
+            id="a2"
+            d="M98.6152 235.716L104.847 220.782H105.055L111.807 236.703H126.271L111.313 204.121H98.6931L98.6152 204.29V235.716Z"
+            fill="black"
+          />
+          <path
+            id="a3"
+            d="M131.295 247.624H116.455H102.238H98.6152V259.831H121.596L128.257 275.284H144.006L131.295 247.624Z"
+            fill="black"
+          />
+          <path
+            id="a1"
+            d="M66 275.284H81.8401L88.3969 259.831H88.5917V226.106L66 275.284Z"
+            fill="black"
+          />
+          <path
+            id="t1"
+            d="M201.966 204.121H150.187V217.042H177.907V275.284H193.539V217.042H201.966V204.121Z"
+            fill="black"
+          />
+          <path
+            id="t2"
+            d="M221.259 204.121H212.885V217.042H221.259V204.121Z"
+            fill="black"
+          />
+          <path
+            id="l1"
+            d="M291.631 204.121H275.985V251.637H291.631V204.121Z"
+            fill="#C0392B"
+          />
+          <path
+            id="l2"
+            d="M324.518 262.571H275.985V275.284H324.518V262.571Z"
+            fill="#C0392B"
+          />
+          <path
+            id="e3"
+            d="M391.112 232.989H370.494V245.299H391.112V232.989Z"
+            fill="#C0392B"
+          />
+          <path
+            id="e2"
+            d="M359.536 245.299H359.575V232.989H359.536V232.911H344.604V275.284H393.332V263.064H359.536V245.299Z"
+            fill="#C0392B"
+          />
+          <path
+            id="e1"
+            d="M344.604 204.121V221.99H359.536V216.341H393.332V204.121H344.604Z"
+            fill="#C0392B"
+          />
+          <path
+            id="i2"
+            d="M607.46 204.121H591.814V211.471H607.46V204.121Z"
+            fill="#C0392B"
+          />
+          <path
+            id="i1"
+            d="M607.46 222.405H591.814V275.271H607.46V222.405Z"
+            fill="#C0392B"
+          />
+          <path
+            id="d1"
+            d="M559.017 213.406C553.733 208.497 546.709 205.614 537.997 204.562V217.834C547.778 220.223 552.668 227.496 552.668 239.651C552.668 254.862 545.099 262.467 529.96 262.467H518.664V216.938H527.064V204.121H503.019V275.284H530.817C542.935 275.284 552.318 272.189 558.965 265.999C565.613 259.809 568.946 251.026 568.963 239.651C568.997 228.292 565.682 219.544 559.017 213.406Z"
+            fill="#C0392B"
+          />
+          <path
+            id="g1"
+            d="M762.615 236.014V247.325H767.12V261.246C763.187 262.416 759.11 263.028 755.007 263.064C747.814 263.064 742.365 261.112 738.66 257.208C734.955 253.303 733.138 247.55 733.207 239.949C733.207 232.417 734.99 226.664 738.556 222.691C742.122 218.717 747.537 216.7 754.799 216.639C758.357 216.608 761.899 217.12 765.303 218.159C768.724 219.198 771.934 220.838 774.781 223.002L779.805 210.809C776.541 208.23 772.806 206.311 768.808 205.16C764.239 203.718 759.473 202.995 754.682 203.017C747.615 202.818 740.61 204.38 734.298 207.562C728.798 210.457 724.28 214.918 721.314 220.379C718.228 226.431 716.702 233.158 716.873 239.949C716.72 246.602 718.21 253.19 721.21 259.13C724.045 264.525 728.426 268.952 733.791 271.843C739.374 274.864 746.169 276.379 754.176 276.388C758.787 276.386 763.385 275.912 767.899 274.973C772.093 274.163 776.161 272.805 780 270.934V236.014H762.615Z"
+            fill="#C0392B"
+          />
+          <path
+            id="g2"
+            d="M751.682 236.014H747.203V247.312H751.682V236.014Z"
+            fill="#C0392B"
+          />
+          <path
+            id="n3"
+            d="M477.895 204.121H463.366V211.471H477.895V204.121Z"
+            fill="#C0392B"
+          />
+          <path
+            id="n2"
+            d="M463.366 222.405V249.442L427.843 204.121H416.235V257.104H430.777V229.859L466.391 275.284H477.895V222.405H463.366Z"
+            fill="#C0392B"
+          />
+          <path
+            id="n1"
+            d="M430.764 268.025H416.235V275.271H430.764V268.025Z"
+            fill="#C0392B"
+          />
+          <path
+            id="n33"
+            d="M693.827 204.121H679.298V211.471H693.827V204.121Z"
+            fill="#C0392B"
+          />
+          <path
+            id="n11"
+            d="M646.709 268.025H632.181V275.271H646.709V268.025Z"
+            fill="#C0392B"
+          />
+          <path
+            id="n22"
+            d="M679.299 222.405V249.442L643.775 204.121H632.181V257.104H646.709V229.859L682.324 275.284H693.827V222.405H679.299Z"
+            fill="#C0392B"
+          />
+          <path
+            id="chim"
+            d="M62.1348 28.6559H96.5131V88.0415L62.1348 124.189V28.6559Z"
+            fill="#242E4C"
+          />
+          <path
+            id="chim_2"
+            d="M268.405 41.5658H291.324V75.2711L268.405 95.7874V41.5658Z"
+            fill="#242E4C"
+          />
+          <path
+            id="homestroke"
+            d="M245 352.695H43.5135V174.538H12L65.2554 117.734L168.135 8L261.243 104.377M757 301.055V352.695H807V157.755H312.811L261.243 104.377M261.243 104.377L347.189 23.4919L481.838 142.263"
+            stroke="#242E4C"
+            stroke-width="10"
+          />
+          <g id="window">
+            <rect
+              id="Rectangle 83"
+              x="141"
+              y="76"
+              width="25"
+              height="25"
+              fill="#242E4C"
+            />
+            <rect
+              id="Rectangle 87"
+              x="319"
+              y="76"
+              width="25"
+              height="25"
+              fill="#242E4C"
+            />
+            <rect
+              id="Rectangle 85"
+              x="141"
+              y="104"
+              width="25"
+              height="25"
+              fill="#242E4C"
+            />
+            <rect
+              id="Rectangle 88"
+              x="319"
+              y="104"
+              width="25"
+              height="25"
+              fill="#242E4C"
+            />
+            <rect
+              id="Rectangle 84"
+              x="169"
+              y="76"
+              width="25"
+              height="25"
+              fill="#242E4C"
+            />
+            <rect
+              id="Rectangle 89"
+              x="347"
+              y="76"
+              width="25"
+              height="25"
+              fill="#242E4C"
+            />
+            <rect
+              id="Rectangle 86"
+              x="169"
+              y="104"
+              width="25"
+              height="25"
+              fill="#242E4C"
+            />
+            <rect
+              id="Rectangle 90"
+              x="347"
+              y="104"
+              width="25"
+              height="25"
+              fill="#242E4C"
+            />
+          </g>
+        </g>
+      </svg>
+    </div>
+  </body>
+</html>
